@@ -20,7 +20,7 @@ pipeline {
             steps {
             bat '''
                 cd %WORKSPACE%
-                cd maven-app
+                cd maven-test-app
                 mkdir target
                 mvn package
             '''
