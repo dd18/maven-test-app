@@ -11,8 +11,8 @@ pipeline {
         stage('Code Checkout') {
             steps {
                 //checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'a0a92755-710d-4e73-9ab6-a7a976eb99ad', url: 'https://github.com/debasishdas033/maven-app.git']]])
-               // bat 'git clone https://github.com/debasishdas033/maven-app.git'
-                bat 'echo %WORKSPACE%'
+               bat 'git clone https://github.com/dd18/maven-test-app.git'
+                
                 
                 }
         }
